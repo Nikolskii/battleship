@@ -10,7 +10,7 @@ let isSunk = false;
 while (isSunk == false) {
   guess = prompt('Готовься, целься, огонь! (Введи номер от 0 до 6):');
   if (guess < 0 || guess > 6) {
-    alert('Пожалуйста, введи корректный номер')
+    alert('Пожалуйста, введи корректный номер');
   } else {
     guesees = guesees + 1;
     if (guess == location1 || guess == location2 || guess == location3) {
@@ -24,7 +24,13 @@ while (isSunk == false) {
       alert('ПРОМАХНУЛСЯ!');
     }
   }
-} 
+}
 
-let stats = "Ты использовал " + guesees + " попытки, чтобы потопить корабль. " + "Точность стрельбы: " + (3/guesees) + ".";
+let stats =
+  'Ты использовал ' +
+  guesees +
+  ' попытки, чтобы потопить корабль. ' +
+  'Точность стрельбы: ' +
+  3 / guesees +
+  '.';
 alert(stats);
